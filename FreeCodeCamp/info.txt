@@ -1,0 +1,53 @@
+# Extensions 
+- Prettier - Code formatter
+- Emmet
+- ES7 + React/Redux
+
+- To make a component function name MUST BE CAPITALIZED.
+- JSX is JS XML. It allows to wirte HTML in React. A component should return JSX.
+
+# JSX Rules
+- return single element. return it in <div> or <section> or <article> etc. div / section/ article / Fragment
+- use camelCase for html attribute
+- className instead of class
+- close every element
+- formatting
+
+- JSX css
+- To write javascript in jsx we need {}. Css should be in object so the syntax is {{}}
+
+- Event Handler
+- To invoke a function after a even it must in an arrow function. 
+  If not in arrow function it will invoke the moment when the application starts running. (in case of we have to pass argument to the function).
+
+# Hooks general rules
+- begins with 'use';
+- component name must be uppercase;
+- must be in the function/component body;
+- cannot call conditionally; ( cannot be in if else ).
+
+# Why use keys in lists
+- Keys help React identify which items have changed (added/removed/re-ordered).
+  To give a unique identity to every element inside the array, a key is required.
+
+# useState
+- returns a default state value and function. Function controls the value that we have in our state. 
+- preserves the value and triggers re render.
+
+# useEffect
+- by default runs after every re-render; (every time we render our component)
+- cleanup function; before re render useEffect cleanup function will run.
+- second parameter;
+- it is used to implement work outside of the componenet. Like data fetching, listening for events.
+- If we only want to run useEffect on initial render we add second argument and the argument is an empy array.
+- If we pass a value in second parameter and if the value changes, useEffect will run.
+
+# Short-Cicuit evaluation
+- for OR operator if left value is false then it will return right value.
+- for AND operator if left value is true it will return right value.
+
+# useRef
+- preserves value;
+- Does not trigger re0render;
+- target DOM nodes/elements;
+- focus out input the moment app renders;
